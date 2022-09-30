@@ -36,7 +36,7 @@ const TaskItem: FC<TaskItemProps> = ({ task }) => {
         </Text>
       </View>
       <IconButton
-        containerStyle={{ marginRight: "0", marginLeft: "auto" }}
+        containerStyle={{ marginRight: 0, marginLeft: "auto" }}
         icon={<IconTrash color={COLORS.secondaryIcon} />}
         onPress={removeTask}
       />

@@ -1,3 +1,5 @@
+import Svg, { Path } from "react-native-svg";
+
 function IconCheck({
   size = 24,
   color = "currentColor",
@@ -5,7 +7,7 @@ function IconCheck({
   ...props
 }) {
   return (
-    <svg
+    <Svg
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-check"
       width={size}
@@ -18,9 +20,9 @@ function IconCheck({
       strokeLinejoin="round"
       {...props}
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M5 12l5 5l10 -10" />
-    </svg>
+      <Path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <Path d="M5 12l5 5l10 -10" />
+    </Svg>
   );
 }
 
